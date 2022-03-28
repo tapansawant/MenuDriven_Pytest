@@ -11,23 +11,25 @@ def Area_Square(a):
 
 
 if __name__ == "__main__":
-    l = int(input("Enter length:"))
-    b = int(input("Enter breadth:"))
-    side = int(input("Enter side of square:"))
 
     while True:
         print("\nPress ")
         print("1 to find area of rectangle")
         print("2 to find perimeter of rectangle ")
-        print("2 to find area of square ")
+        print("3 to find area of square ")
         print("4 to Exit")
 
         ch = int(input("Enter your Choice "))
         if ch == 1:
+            l = int(input("Enter length:"))
+            b = int(input("Enter breadth:"))
             print(Area_Rectangle(l, b))
         elif ch == 2:
+            l = int(input("Enter length:"))
+            b = int(input("Enter breadth:"))
             print(Perimeter_Rect(l, b))
         elif ch == 3:
+            side = int(input("Enter side of square:"))
             print(Area_Square(side))
         elif ch == 4:
             break
