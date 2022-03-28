@@ -1,0 +1,24 @@
+import MenuDriven
+
+
+def test_Area_Rectangle():
+    x = 10
+    y = 20
+    result = MenuDriven.Area_Rectangle(x, y)
+    assert x * y == result
+
+
+def test_Perimeter_Rect():
+    x = 20
+    y = 10
+    result = MenuDriven.Perimeter_Rect(x, y)
+    assert 2*(x+y) == result
+
+
+def test_Area_Square():
+    x = 5
+    result = MenuDriven.Area_Square(x)
+    assert x * x == result
+
+
+
